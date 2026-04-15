@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Shepherd</title>
+  <meta name="description" content="Contact Shepherd about the Argus System — ranch deployments, remote property monitoring, partnership opportunities, and tactical programs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="Shepherd home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span>Shepherd</span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero hero--compact">
+      <div class="hero__bg hero__bg--contact" data-parallax="-0.1" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <span class="eyebrow">Contact Shepherd</span>
+        <h1 class="hero__title">Open a channel.</h1>
+        <p class="hero__sub">
+          Tell us about the terrain you&rsquo;re trying to watch. Shepherd
+          works directly with ranchers, landowners, and mission-driven
+          organizations to scope and deploy the Argus System.
+        </p>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="section">
+      <div class="container">
+        <div class="two-col two-col--4-6">
+          <div class="reveal">
+            <span class="eyebrow"><span class="accent-bar"></span>Field Inquiry</span>
+            <h2>Start the conversation.</h2>
+            <p style="color:var(--text-dim);">
+              A member of the Shepherd team will respond within two
+              business days. For time-sensitive or classified inquiries,
+              note it in your message and we&rsquo;ll route accordingly.
+            </p>
+          </div>
+
+          <form class="form reveal" data-contact-form novalidate>
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="f-org">Organization</label>
+              <input id="f-org" name="organization" type="text" autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label for="f-use">Use Case</label>
+              <select id="f-use" name="use_case" required>
+                <option value="">Select an application</option>
+                <option>Ranch &amp; Livestock</option>
+                <option>Remote Property / Off-Grid</option>
+                <option>Conservation &amp; Land Management</option>
+                <option>Tactical / Defense</option>
+                <option>Research &amp; Academic</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-msg">Message</label>
+              <textarea id="f-msg" name="message" placeholder="Coverage area, environment, existing infrastructure, timeline…" required></textarea>
+            </div>
+            <div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;">
+              <button type="submit" class="btn btn--solid">
+                Send Transmission <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+              </button>
+              <p data-form-status hidden style="margin:0;color:var(--accent-bright);font-family:var(--font-display);letter-spacing:0.12em;text-transform:uppercase;font-size:0.85rem;"></p>
+            </div>
+          </form>
+        </div>
+
+        <!-- CONTACT META -->
+        <div class="contact-meta reveal">
+          <div class="contact-meta__item">
+            <h4>General</h4>
+            <p>contact@shepherd.systems</p>
+          </div>
+          <div class="contact-meta__item">
+            <h4>Programs</h4>
+            <p>programs@shepherd.systems</p>
+          </div>
+          <div class="contact-meta__item">
+            <h4>Headquarters</h4>
+            <p>Made in the USA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="brand">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span>Shepherd</span>
+          </div>
+          <p>Autonomous monitoring for the places networks don&rsquo;t reach.
+             Designed and built in the United States.</p>
+        </div>
+        <div>
+          <h5>Product</h5>
+          <ul class="footer__links">
+            <li><a href="products.html">Argus System</a></li>
+            <li><a href="products.html#hub">Hub</a></li>
+            <li><a href="products.html#scout">Scout</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <ul class="footer__links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#mission">Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul class="footer__links">
+            <li><a href="contact.html">Field Inquiries</a></li>
+            <li><a href="contact.html">Partnerships</a></li>
+            <li><a href="contact.html">Press</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Shepherd Systems · All rights reserved</span>
+        <span>Made in USA</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
