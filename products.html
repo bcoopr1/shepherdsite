@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products — Shepherd Argus System</title>
+  <meta name="description" content="The Argus System by Shepherd: a LoRa mesh monitoring platform composed of the Hub central base station and Scout remote sensor node. Full technical specifications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="Shepherd home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span>Shepherd</span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span></button>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero hero--compact">
+      <div class="hero__bg hero__bg--products" data-parallax="-0.1" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <span class="eyebrow">Products · Argus System</span>
+        <h1 class="hero__title">Two units. One mesh.</h1>
+        <p class="hero__sub">
+          The Argus System is a complete monitoring platform in two
+          ruggedized hardware units. Deploy a Hub, scatter Scouts across
+          your terrain, and the mesh forms itself.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#argus">
+            System Overview <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="btn btn--ghost" href="contact.html">Request Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARGUS SYSTEM OVERVIEW -->
+    <section class="section" id="argus">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow"><span class="accent-bar"></span>The Argus System</span>
+          <h2>Persistent awareness, deployed in an afternoon.</h2>
+          <p class="section__lead">
+            Argus is Shepherd&rsquo;s flagship monitoring platform. It consists
+            of one or more Hubs coordinating a mesh of Scouts over
+            long-range LoRa radio. The system forms itself, heals itself,
+            and requires no cellular, Wi-Fi, or satellite connectivity to
+            operate.
+          </p>
+        </div>
+
+        <div class="features reveal">
+          <div class="feature">
+            <div class="feature__label">Topology</div>
+            <h3>Self-Forming Mesh</h3>
+            <p>Scouts discover neighbors automatically. The mesh routes
+               around failures, extends with every added node, and
+               converges in seconds.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__label">Range</div>
+            <h3>10+ km Per Hop</h3>
+            <p>Line-of-sight hops exceed 10 km under standard conditions.
+               Multi-hop mesh extends total reach across thousands of
+               acres.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__label">Power</div>
+            <h3>Solar Native</h3>
+            <p>Every Scout is solar-fed with a sealed LiFePO₄ buffer
+               rated for multi-year unattended operation.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__label">Sovereignty</div>
+            <h3>No Cloud Required</h3>
+            <p>All data lives on the Hub. View, query, and export from a
+               local web interface. Backhaul is optional, never assumed.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__label">Security</div>
+            <h3>End-to-End Encrypted</h3>
+            <p>AES-256 on the radio layer. Signed firmware. Device
+               identity pinned at provisioning.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__label">Interface</div>
+            <h3>Phone, Tablet, Terminal</h3>
+            <p>Responsive web UI served locally by the Hub. Works on any
+               browser. No app required, no account to create.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HUB -->
+    <section class="section section--alt" id="hub">
+      <div class="container">
+        <div class="product reveal">
+          <div class="product__media">
+            <img src="https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?auto=format&fit=crop&w=1200&q=80" alt="Argus Hub central base station rendering" loading="lazy" />
+          </div>
+          <div class="product__copy">
+            <span class="eyebrow"><span class="accent-bar"></span>Argus · Hub</span>
+            <h2>The command node.</h2>
+            <p>
+              The Hub is the central coordinator for the Argus mesh.
+              It aggregates telemetry from every Scout on the network,
+              stores it on internal flash, and serves a local web UI
+              for live monitoring, alerting, and historical review.
+            </p>
+            <p>
+              Powered by 12&ndash;24&nbsp;VDC or solar with battery backup.
+              IP65 enclosure for outdoor mounting. Optional backhaul
+              modules for Wi-Fi, Ethernet, cellular, or satellite when
+              remote access is desired — always off by default.
+            </p>
+
+            <dl class="specs">
+              <div class="specs__row"><dt>Radio</dt><dd>LoRa, 902–928 MHz (US) · 863–870 MHz (EU) · configurable spreading factor</dd></div>
+              <div class="specs__row"><dt>Capacity</dt><dd>Up to 512 Scouts per Hub · multi-Hub federation supported</dd></div>
+              <div class="specs__row"><dt>Compute</dt><dd>Quad-core ARM · 4 GB RAM · 128 GB onboard storage</dd></div>
+              <div class="specs__row"><dt>Interface</dt><dd>Local-only web UI · REST API · MQTT broker · CSV export</dd></div>
+              <div class="specs__row"><dt>Power</dt><dd>12–24 VDC · 7 W average · 4-hour internal UPS</dd></div>
+              <div class="specs__row"><dt>Enclosure</dt><dd>Aluminum, IP65, −30 °C to +60 °C operational</dd></div>
+              <div class="specs__row"><dt>Security</dt><dd>AES-256 radio · signed firmware · device identity pinning</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCOUT -->
+    <section class="section" id="scout">
+      <div class="container">
+        <div class="product product--reverse reveal">
+          <div class="product__media">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80" alt="Argus Scout remote sensor node rendering" loading="lazy" />
+          </div>
+          <div class="product__copy">
+            <span class="eyebrow"><span class="accent-bar"></span>Argus · Scout</span>
+            <h2>The remote sensor node.</h2>
+            <p>
+              Scouts are the distributed eyes of the Argus mesh. Each unit
+              is a fully sealed, solar-fed sensor node designed to live
+              outdoors through multiple seasons without intervention.
+            </p>
+            <p>
+              A single Scout carries motion, temperature, magnetic, and
+              tamper sensors, plus configurable external I/O for gate
+              reeds, float switches, trail cams, or custom integrations.
+              Scouts relay for each other, so the mesh gains range
+              every time you add one.
+            </p>
+
+            <dl class="specs">
+              <div class="specs__row"><dt>Radio</dt><dd>LoRa mesh · self-forming, self-healing · 10+ km line-of-sight per hop</dd></div>
+              <div class="specs__row"><dt>Sensors</dt><dd>PIR motion · 3-axis magnetometer · temperature · tamper · battery</dd></div>
+              <div class="specs__row"><dt>External I/O</dt><dd>4× digital inputs · 2× dry-contact relays · 1× analog input</dd></div>
+              <div class="specs__row"><dt>Power</dt><dd>5 W integrated solar · 10 Ah LiFePO₄ · 3+ years autonomous</dd></div>
+              <div class="specs__row"><dt>Enclosure</dt><dd>Glass-filled polymer, IP67, UV-stable, −40 °C to +70 °C</dd></div>
+              <div class="specs__row"><dt>Mounting</dt><dd>T-post, wooden post, pipe, or magnetic mount · no tools beyond a wrench</dd></div>
+              <div class="specs__row"><dt>Weight</dt><dd>1.6 kg / 3.5 lb</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--alt section--tight">
+      <div class="container reveal" style="display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between;">
+        <div>
+          <span class="eyebrow">Deployment</span>
+          <h2 style="margin:0;">Build your mesh.</h2>
+          <p style="color:var(--text-dim);margin-top:0.5rem;max-width:52ch;">
+            Every property is different. Talk to us about coverage goals,
+            sensor mix, and deployment environment.
+          </p>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a class="btn btn--solid" href="contact.html">
+            Request a Quote <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="btn btn--ghost" href="about.html">About Shepherd</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="brand">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span>Shepherd</span>
+          </div>
+          <p>Autonomous monitoring for the places networks don&rsquo;t reach.
+             Designed and built in the United States.</p>
+        </div>
+        <div>
+          <h5>Product</h5>
+          <ul class="footer__links">
+            <li><a href="products.html">Argus System</a></li>
+            <li><a href="products.html#hub">Hub</a></li>
+            <li><a href="products.html#scout">Scout</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <ul class="footer__links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#mission">Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul class="footer__links">
+            <li><a href="contact.html">Field Inquiries</a></li>
+            <li><a href="contact.html">Partnerships</a></li>
+            <li><a href="contact.html">Press</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Shepherd Systems · All rights reserved</span>
+        <span>Made in USA</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
