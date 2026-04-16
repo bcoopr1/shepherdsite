@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shepherd — Awareness Without Infrastructure</title>
+  <meta name="description" content="Shepherd builds the Argus System — a self-contained LoRa mesh monitoring platform for ranches, remote properties, and tactical environments. No internet. No subscriptions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark"></span>
+      Shepherd
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Request Access</a>
+    <button class="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile-overlay">
+    <button class="nav-mobile-close">✕ &nbsp;CLOSE</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" style="margin-top:1rem; border:1px solid var(--accent); padding:0.6rem 1.5rem;">Request Access</a>
+  </div>
+
+  <!-- ── HERO ───────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-label">Shepherd Systems — Argus Platform</div>
+      <h1 class="hero-title">
+        Awareness<br>
+        Without<br>
+        <span>Infrastructure.</span>
+      </h1>
+      <p class="hero-subtitle">
+        The Argus System delivers persistent, private surveillance over any terrain. No internet. No subscriptions. No compromise.
+      </p>
+      <div class="hero-actions">
+        <a href="products.html" class="btn-primary">Explore Argus <span class="arrow">→</span></a>
+        <a href="about.html" class="btn-secondary">Our mission <span class="arrow">→</span></a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span class="hero-scroll-line"></span>
+      Scroll to explore
+    </div>
+  </section>
+
+  <!-- ── ARGUS OVERVIEW ─────────────────────────────── -->
+  <section style="background: var(--bg-primary);">
+    <div class="section-inner">
+      <div class="intro-grid">
+        <div>
+          <div class="section-label">The Argus System</div>
+          <h2 class="section-title">The Eye That Never Closes</h2>
+          <p style="color:var(--text-muted); margin-bottom:1.25rem;">
+            Argus is a self-contained LoRa mesh monitoring platform engineered for ranches, remote properties, and operational environments where connectivity cannot be assumed.
+          </p>
+          <p style="color:var(--text-muted);">
+            Built around two hardware units — the Hub and the Scout — Argus creates a resilient, encrypted sensor network that operates entirely off-grid. Every node talks to every other node. The system survives even when individual units do not.
+          </p>
+          <div class="intro-stat-grid">
+            <div class="stat-card">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Mile range</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">Zero</div>
+              <div class="stat-label">Subscriptions</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Private network</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">72hr+</div>
+              <div class="stat-label">Battery life</div>
+            </div>
+          </div>
+        </div>
+        <div class="intro-image">
+          <img
+            src="https://images.unsplash.com/photo-1447752875215-b2761acf3dbd?auto=format&fit=crop&w=900&q=80"
+            alt="Dark forest canopy — Argus monitoring environment"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PARALLAX — HUB ─────────────────────────────── -->
+  <section class="parallax-section">
+    <div class="parallax-bg" style="background-image:url('https://images.unsplash.com/photo-1516912481808-3406841bd33c?auto=format&fit=crop&w=1920&q=80');"></div>
+    <div class="parallax-overlay"></div>
+    <div class="parallax-content">
+      <div style="max-width:580px;">
+        <div class="section-label">Hub — Central Station</div>
+        <h2 class="section-title">Command from the Center</h2>
+        <p style="color:var(--text-muted); margin-bottom:2rem; font-size:0.95rem; line-height:1.8;">
+          The Hub is the nerve center of your Argus network. It aggregates data from all Scout nodes, maintains the mesh, and serves a local dashboard — no cloud, no latency, no exposure.
+        </p>
+        <a href="products.html#hub" class="btn-primary">Hub Specifications <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUCT CARDS ──────────────────────────────── -->
+  <section style="background:var(--bg-secondary); border-top:1px solid var(--border);">
+    <div class="section-inner">
+      <div class="section-label">What We Build</div>
+      <h2 class="section-title">Two Units. One System.</h2>
+      <p class="section-desc">Argus is architected for simplicity in deployment and depth in capability. Each unit is purpose-built for its role in the mesh.</p>
+      <div class="product-cards">
+        <div class="product-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg>
+          </div>
+          <div class="card-label">System — Argus</div>
+          <div class="card-title">The Full Platform</div>
+          <p class="card-desc">Hub and Scout hardware unified into a resilient mesh network. Deploy across any terrain. Own your data. Answer to no one.</p>
+          <a href="products.html" class="card-link">Explore Argus <span class="arrow">→</span></a>
+        </div>
+        <div class="product-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="card-label">Hardware — Hub</div>
+          <div class="card-title">Central Base Station</div>
+          <p class="card-desc">The Hub manages the mesh, stores data locally, and surfaces real-time insights through an offline dashboard accessible over LAN.</p>
+          <a href="products.html#hub" class="card-link">Hub Details <span class="arrow">→</span></a>
+        </div>
+        <div class="product-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="card-label">Hardware — Scout</div>
+          <div class="card-title">Remote Sensor Node</div>
+          <p class="card-desc">Field-deployable sensor nodes that relay motion events, environmental data, and GPS telemetry back to the Hub via encrypted LoRa mesh.</p>
+          <a href="products.html#scout" class="card-link">Scout Details <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PARALLAX — SCOUT ────────────────────────────── -->
+  <section class="parallax-section">
+    <div class="parallax-bg" style="background-image:url('https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1920&q=80');"></div>
+    <div class="parallax-overlay" style="background:rgba(10,10,11,0.6);"></div>
+    <div class="parallax-content" style="display:flex; justify-content:flex-end;">
+      <div style="max-width:560px;">
+        <div class="section-label">Scout — Remote Node</div>
+        <h2 class="section-title">Watch What Matters. From Anywhere.</h2>
+        <p style="color:var(--text-muted); margin-bottom:2rem; font-size:0.95rem; line-height:1.8;">
+          Place a Scout anywhere within range and it joins the mesh automatically. No configuration. No credentials. It simply works — in rain, mud, and darkness.
+        </p>
+        <a href="products.html#scout" class="btn-primary">Scout Specifications <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── USE CASES ──────────────────────────────────── -->
+  <section style="background:var(--bg-primary);">
+    <div class="section-inner">
+      <div class="section-label">Applications</div>
+      <h2 class="section-title">Built for the Field</h2>
+      <p class="section-desc">Argus was designed for environments where infrastructure is absent and failure is not an option.</p>
+      <div class="use-case-grid">
+        <div class="use-case-item">
+          <span class="use-case-number">01</span>
+          <div class="use-case-title">Ranch &amp; Agricultural</div>
+          <p class="use-case-desc">Monitor livestock, perimeters, and equipment across thousands of acres. Know when gates open, when animals move, when something is wrong — without ever touching a cell signal.</p>
+        </div>
+        <div class="use-case-item">
+          <span class="use-case-number">02</span>
+          <div class="use-case-title">Outdoor &amp; Remote Property</div>
+          <p class="use-case-desc">Cabins, hunting leases, conservation land. Deploy Argus and receive real-time awareness without internet, monthly fees, or a single cloud dependency.</p>
+        </div>
+        <div class="use-case-item">
+          <span class="use-case-number">03</span>
+          <div class="use-case-title">Tactical &amp; Defense</div>
+          <p class="use-case-desc">Persistent area surveillance with near-zero electromagnetic footprint. Purpose-built for forward operating environments where connectivity is a liability, not an asset.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BANNER ─────────────────────────────────── -->
+  <section class="cta-banner">
+    <div class="section-inner">
+      <div class="cta-banner-text">
+        <h2>Ready to deploy Argus?</h2>
+        <p>Request access or reach out with your operational requirements.</p>
+      </div>
+      <a href="contact.html" class="btn-primary">Request Access <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:1rem; display:inline-flex;">
+          <span class="logo-mark"></span>Shepherd
+        </a>
+        <p>Persistent awareness for ranches, remote properties, and operational environments. Built off-grid. Built to last.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html">Argus System</a></li>
+          <li><a href="products.html#hub">Hub Station</a></li>
+          <li><a href="products.html#scout">Scout Node</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Our Mission</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Shepherd Systems. All rights reserved.</p>
+      <p>Built for the field. Designed without compromise.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

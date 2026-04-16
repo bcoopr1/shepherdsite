@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — Shepherd Systems</title>
+  <meta name="description" content="The Argus System — self-contained LoRa mesh monitoring hardware. Hub base station and Scout remote sensor node technical specifications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark"></span>
+      Shepherd
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Request Access</a>
+    <button class="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile-overlay">
+    <button class="nav-mobile-close">✕ &nbsp;CLOSE</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" style="margin-top:1rem; border:1px solid var(--accent); padding:0.6rem 1.5rem;">Request Access</a>
+  </div>
+
+  <!-- ── PAGE HERO ──────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1920&q=80');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="section-label">Hardware Systems</div>
+      <h1>The Argus Platform</h1>
+    </div>
+  </section>
+
+  <!-- ── ARGUS SYSTEM OVERVIEW ──────────────────────── -->
+  <section style="background:var(--bg-primary);">
+    <div class="section-inner">
+      <div class="section-label">System Overview</div>
+      <h2 class="section-title" style="margin-bottom:1rem;">Argus — Full Platform</h2>
+      <p style="color:var(--text-muted); max-width:680px; line-height:1.85; margin-bottom:3rem;">
+        Argus is a self-contained LoRa mesh surveillance and monitoring system. It requires no internet, no cloud subscription, and no external infrastructure of any kind. Deploy it. Walk away. It works.
+      </p>
+
+      <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:1.5px; background:var(--border); margin-bottom:3rem;">
+        <div style="background:var(--bg-secondary); padding:1.75rem;">
+          <div class="stat-number" style="font-size:1.6rem;">LoRa</div>
+          <div class="stat-label">915 MHz Protocol</div>
+        </div>
+        <div style="background:var(--bg-secondary); padding:1.75rem;">
+          <div class="stat-number" style="font-size:1.6rem;">AES-256</div>
+          <div class="stat-label">Encryption</div>
+        </div>
+        <div style="background:var(--bg-secondary); padding:1.75rem;">
+          <div class="stat-number" style="font-size:1.6rem;">Mesh</div>
+          <div class="stat-label">Self-healing network</div>
+        </div>
+        <div style="background:var(--bg-secondary); padding:1.75rem;">
+          <div class="stat-number" style="font-size:1.6rem;">Local</div>
+          <div class="stat-label">Data storage only</div>
+        </div>
+        <div style="background:var(--bg-secondary); padding:1.75rem;">
+          <div class="stat-number" style="font-size:1.6rem;">15+mi</div>
+          <div class="stat-label">Node-to-node range</div>
+        </div>
+      </div>
+
+      <div style="padding:1.75rem 2rem; border:1px solid var(--border); border-left:2px solid var(--accent); background:var(--bg-secondary); max-width:680px;">
+        <p style="font-size:0.875rem; color:var(--text-muted); line-height:1.8; margin:0;">
+          <strong style="color:var(--text-primary); font-family:'Rajdhani',sans-serif; letter-spacing:0.06em; font-size:0.9rem;">Architecture note —</strong>
+          Argus uses a true mesh topology where each Scout acts as both an endpoint and a relay. Loss of any single node does not break the network. The system self-heals, re-routes, and continues operating.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HUB ────────────────────────────────────────── -->
+  <section id="hub" style="background:var(--bg-secondary); border-top:1px solid var(--border);">
+    <div class="section-inner">
+      <div class="product-detail-grid">
+        <div>
+          <div class="section-label">Hub — Central Base Station</div>
+          <h2 class="section-title" style="margin-bottom:1rem;">Command. Collect. Control.</h2>
+          <p style="color:var(--text-muted); margin-bottom:2rem; line-height:1.85;">
+            The Hub is the nerve center of every Argus deployment. It manages the full mesh network, aggregates telemetry from all Scout nodes, and presents a real-time local dashboard accessible from any device on the same LAN — no internet required.
+          </p>
+
+          <ul class="feature-list" style="margin-bottom:2.5rem;">
+            <li>LoRa 915MHz transceiver with high-gain directional antenna</li>
+            <li>Local web dashboard — Wi-Fi AP + Ethernet, zero cloud dependency</li>
+            <li>SD card storage with optional M.2 NVMe for long-term logging</li>
+            <li>Battery-backed with solar charge controller input</li>
+            <li>Supports up to 50 Scout nodes per Hub</li>
+            <li>Configurable alert system: audio, LED, and local push notification</li>
+            <li>Full mesh traffic encrypted — AES-256 end-to-end</li>
+          </ul>
+
+          <ul class="spec-list">
+            <li><span class="spec-key">Radio</span><span class="spec-val">LoRa 915MHz, 27 dBm output</span></li>
+            <li><span class="spec-key">Range</span><span class="spec-val">15+ mi line-of-sight</span></li>
+            <li><span class="spec-key">Network</span><span class="spec-val">Self-healing mesh, up to 50 nodes</span></li>
+            <li><span class="spec-key">Power Input</span><span class="spec-val">12V DC, solar-compatible, 10Ah backup</span></li>
+            <li><span class="spec-key">Connectivity</span><span class="spec-val">Local Wi-Fi AP + Ethernet LAN</span></li>
+            <li><span class="spec-key">Storage</span><span class="spec-val">MicroSD + optional M.2 NVMe</span></li>
+            <li><span class="spec-key">Ingress Rating</span><span class="spec-val">IP65</span></li>
+            <li><span class="spec-key">Operating Temp</span><span class="spec-val">-20°C to +60°C</span></li>
+            <li><span class="spec-key">Dimensions</span><span class="spec-val">220 × 160 × 80 mm</span></li>
+          </ul>
+        </div>
+        <div class="product-image-block">
+          <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+            alt="Hub — Central Base Station"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SCOUT ──────────────────────────────────────── -->
+  <section id="scout" style="background:var(--bg-primary); border-top:1px solid var(--border);">
+    <div class="section-inner">
+      <div class="product-detail-grid reverse">
+        <div>
+          <div class="section-label">Scout — Remote Sensor Node</div>
+          <h2 class="section-title" style="margin-bottom:1rem;">Deployed. Autonomous. Invisible.</h2>
+          <p style="color:var(--text-muted); margin-bottom:2rem; line-height:1.85;">
+            Scouts are field-hardened sensor nodes designed for unattended, long-duration deployment in any environment. Each one joins the mesh automatically on power-up. No configuration. No registration. No overhead.
+          </p>
+
+          <ul class="feature-list" style="margin-bottom:2.5rem;">
+            <li>PIR motion detection with configurable sensitivity zones</li>
+            <li>Environmental sensors: temperature, humidity, barometric pressure</li>
+            <li>GPS module for real-time positional telemetry</li>
+            <li>LoRa mesh relay capability — every Scout extends network range</li>
+            <li>72+ hour battery life on a single charge; solar supported</li>
+            <li>Magnetic mount + ground stake mount included in kit</li>
+            <li>Tamper detection with immediate Hub alert</li>
+          </ul>
+
+          <ul class="spec-list">
+            <li><span class="spec-key">Radio</span><span class="spec-val">LoRa 915MHz, 20 dBm output</span></li>
+            <li><span class="spec-key">Sensors</span><span class="spec-val">PIR, Temp/Humidity, Barometric, GPS</span></li>
+            <li><span class="spec-key">Battery</span><span class="spec-val">10Ah LiPo, 72hr+ runtime</span></li>
+            <li><span class="spec-key">Charging</span><span class="spec-val">USB-C + 5W solar panel input</span></li>
+            <li><span class="spec-key">Mesh Role</span><span class="spec-val">Endpoint + automatic relay node</span></li>
+            <li><span class="spec-key">Ingress Rating</span><span class="spec-val">IP67</span></li>
+            <li><span class="spec-key">Operating Temp</span><span class="spec-val">-30°C to +70°C</span></li>
+            <li><span class="spec-key">Weight</span><span class="spec-val">340g including battery</span></li>
+            <li><span class="spec-key">Dimensions</span><span class="spec-val">110 × 70 × 45 mm</span></li>
+          </ul>
+        </div>
+        <div class="product-image-block">
+          <img
+            src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=900&q=80"
+            alt="Scout — Remote Sensor Node in terrain"
+            loading="lazy"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA BANNER ─────────────────────────────────── -->
+  <section class="cta-banner">
+    <div class="section-inner">
+      <div class="cta-banner-text">
+        <h2>Request a deployment kit.</h2>
+        <p>We work directly with operators to configure Argus for specific environments.</p>
+      </div>
+      <a href="contact.html" class="btn-primary">Get in Touch <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:1rem; display:inline-flex;">
+          <span class="logo-mark"></span>Shepherd
+        </a>
+        <p>Persistent awareness for ranches, remote properties, and operational environments. Built off-grid. Built to last.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html">Argus System</a></li>
+          <li><a href="products.html#hub">Hub Station</a></li>
+          <li><a href="products.html#scout">Scout Node</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Our Mission</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Shepherd Systems. All rights reserved.</p>
+      <p>Built for the field. Designed without compromise.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

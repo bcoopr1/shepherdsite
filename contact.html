@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Shepherd Systems</title>
+  <meta name="description" content="Request access to the Argus System or discuss your operational requirements with the Shepherd team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark"></span>
+      Shepherd
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Request Access</a>
+    <button class="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile-overlay">
+    <button class="nav-mobile-close">✕ &nbsp;CLOSE</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" style="margin-top:1rem; border:1px solid var(--accent); padding:0.6rem 1.5rem;">Request Access</a>
+  </div>
+
+  <!-- ── PAGE HERO ──────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1475115995893-b75fd9489d69?auto=format&fit=crop&w=1920&q=80');"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="section-label">Get in Touch</div>
+      <h1>Request Access</h1>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────── -->
+  <section style="background:var(--bg-primary);">
+    <div class="section-inner">
+      <div class="contact-grid">
+
+        <!-- Info panel -->
+        <div>
+          <div class="contact-info-title">Direct Contact</div>
+          <p class="contact-info-text">
+            Shepherd works directly with operators, ranchers, and defense customers. We do not have a sales funnel. Tell us your environment and requirements — we will tell you if Argus is the right fit.
+          </p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-detail-content">
+                <div class="cd-label">Email</div>
+                <div class="cd-value">contact@shepherdsystems.io</div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-detail-content">
+                <div class="cd-label">Location</div>
+                <div class="cd-value">Texas, United States</div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+              </div>
+              <div class="contact-detail-content">
+                <div class="cd-label">Response Time</div>
+                <div class="cd-value">Within 48 hours</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding:1.5rem 1.75rem; border:1px solid var(--border); border-left:2px solid var(--accent); background:var(--bg-secondary);">
+            <div style="font-family:'Rajdhani',sans-serif; font-size:0.62rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent); margin-bottom:0.5rem;">Defense &amp; Tactical Inquiries</div>
+            <p style="font-size:0.8rem; color:var(--text-muted); line-height:1.75; margin:0;">For DoD, law enforcement, or defense contractor inquiries, please indicate your affiliation in your message and we will respond through appropriate channels.</p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <form class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="org">Organization</label>
+              <input type="text" id="org" name="organization" placeholder="Ranch, company, agency, or individual">
+            </div>
+            <div class="form-group">
+              <label for="usecase">Primary Use Case</label>
+              <select id="usecase" name="usecase">
+                <option value="" disabled selected>Select your primary use case</option>
+                <option value="ag">Agricultural / Ranch</option>
+                <option value="outdoor">Outdoor / Remote Property</option>
+                <option value="tactical">Tactical / Defense</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Describe your environment, scale, and requirements. Acreage, terrain, number of nodes needed, existing infrastructure (or lack thereof), and timelines."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Transmission →</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:1rem; display:inline-flex;">
+          <span class="logo-mark"></span>Shepherd
+        </a>
+        <p>Persistent awareness for ranches, remote properties, and operational environments. Built off-grid. Built to last.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products.html">Argus System</a></li>
+          <li><a href="products.html#hub">Hub Station</a></li>
+          <li><a href="products.html#scout">Scout Node</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Our Mission</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Shepherd Systems. All rights reserved.</p>
+      <p>Built for the field. Designed without compromise.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
